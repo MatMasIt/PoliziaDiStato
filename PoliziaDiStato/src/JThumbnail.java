@@ -49,6 +49,7 @@ public class JThumbnail extends JLabel {
 	public void setW(int w) {
 		this.w = w;
 		this.i=scaleImage(this.i,this.w,this.h);
+		this.setIcon(this.i);
 	}
 
 	public int getH() {
@@ -58,6 +59,7 @@ public class JThumbnail extends JLabel {
 	public void setH(int h) {
 		this.h = h;
 		this.i=scaleImage(this.i,this.w,this.h);
+		this.setIcon(this.i);
 	}
 
 	public ImageIcon scaleImage(ImageIcon icon, int w, int h) {
